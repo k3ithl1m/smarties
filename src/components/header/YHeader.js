@@ -11,8 +11,6 @@ function generateChild(value, type) {
   if (React.isValidElement(value)) {
     return <View key={type}>{value}</View>;
   } else if (typeof value === "object" && !isEmpty(value)) {
-    console.log("this is the back " + back);
-    console.log(value);
     return type === "center" ? (
       <Title {...value} key={type} />
     ) : (
@@ -71,7 +69,6 @@ Header.propTypes = {
   centerComponent: PropTypes.object,
   rightComponent: PropTypes.object,
   statusBarProps: PropTypes.object,
-  back: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)

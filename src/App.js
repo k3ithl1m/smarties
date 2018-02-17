@@ -12,12 +12,14 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 import WelcomeScreen from "./screens/WelcomeScreen";
+import _MainScreen from "./screens/MainScreens/_MainScreen";
 
 export default class App extends Component {
   render() {
     const MainNavigator = StackNavigator(
       {
-        first: { screen: WelcomeScreen }
+        //first: { screen: WelcomeScreen },
+        main: { screen: _MainScreen }
       },
       {
         headerMode: "none",
