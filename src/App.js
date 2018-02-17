@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
+import { Platform, StyleSheet, Text, View, Dimensions } from "react-native";
 import { TabNavigator, StackNavigator } from "react-navigation";
 import { Provider } from "react-redux";
 
@@ -32,10 +32,17 @@ export default class App extends Component {
     );
     return (
       <Provider store={store}>
-        <View>
-          <MainNavigator />
+        <View style={styles.container}>
+          <MainNavigator style={{ width: Dimensions.get("window").width }} />
         </View>
       </Provider>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#F5FCFF"
+  }
+});
