@@ -26,5 +26,15 @@ export const ComponentStyle = {
     fontSize: 15,
     color: ColorScheme.secondaryFontColor,
     fontWeight: "600"
+  },
+  label: {
+    fontSize: 15,
+    color: '#333',
+    marginLeft: 20
+  },
+  description: {
+    margin: 5,
+    fontSize: 15,
+    marginLeft: 20
   }
 };

@@ -11,7 +11,8 @@ import { Provider } from "react-redux";
 
 import store from "./store";
 
-// import WelcomeScreen from "./screens/WelcomeScreen";
+import WelcomeScreen from "./screens/WelcomeScreen";
+import _Category from "./screens/CreateActivityScreens/_Category";
 import LoginScreen from "./screens/AuthNRegistrationScreens/_LoginScreen";
 import SUGeneralInformationScreen from "./screens/AuthNRegistrationScreens/_SUGeneralInformationScreen";
 import _NewActivity from "./screens/CreateActivityScreens/_NewActivity";
@@ -22,8 +23,9 @@ export default class App extends Component {
   render() {
     const MainNavigator = StackNavigator(
       {
-        // first: { screen: WelcomeScreen },
-        first: { screen: _NewActivity },
+        first: { screen: _Category },
+        // first: { screen: _NewActivity },
+        newActivity: { screen: _NewActivity },
         login: { screen: LoginScreen },
         signUp: { screen: SUGeneralInformationScreen },
         main: { screen: _MainScreen }
@@ -56,4 +58,4 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#F5FCFF"
   }
-})
+});
