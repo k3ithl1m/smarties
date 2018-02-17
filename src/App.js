@@ -12,6 +12,8 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 import WelcomeScreen from "./screens/WelcomeScreen";
+import LoginScreen from "./screens/AuthNRegistrationScreens/_LoginScreen";
+import SUGeneralInformationScreen from "./screens/AuthNRegistrationScreens/_SUGeneralInformationScreen";
 // import _NewActivity from "./screens/NewActivity";
 import _MainScreen from "./screens/MainScreens/_MainScreen";
 
@@ -19,9 +21,11 @@ export default class App extends Component {
   render() {
     const MainNavigator = StackNavigator(
       {
-        first: { screen: WelcomeScreen }
+        first: { screen: WelcomeScreen },
         // first: { screen: _NewActivity }
-        // main: { screen: _MainScreen }
+        login: { screen: LoginScreen },
+        signUp: { screen: SUGeneralInformationScreen },
+        main: { screen: _MainScreen }
       },
       {
         headerMode: "none",
@@ -33,7 +37,13 @@ export default class App extends Component {
     return (
       <Provider store={store}>
         <View style={styles.container}>
-          <MainNavigator style={{ width: Dimensions.get("window").width }} />
+          <MainNavigator
+            style={{
+              ...Platform.select({
+                android: { width: Dimensions.get("window").width }
+              })
+            }}
+          />
         </View>
       </Provider>
     );
