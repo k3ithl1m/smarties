@@ -76,6 +76,7 @@ const EventCard = ({ eventDetail, onPress }) => {
           </View>
         </LinearGradient>
       </ImageBackground>
+      <View style={{ height: 3 }} />
     </TouchableOpacity>
   );
 };

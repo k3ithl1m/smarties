@@ -8,6 +8,7 @@ import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View, Dimensions } from "react-native";
 import { TabNavigator, StackNavigator } from "react-navigation";
 import { Provider } from "react-redux";
+import firebase from "firebase";
 
 import store from "./store";
 
@@ -18,8 +19,22 @@ import SUGeneralInformationScreen from "./screens/AuthNRegistrationScreens/_SUGe
 import _NewActivity from "./screens/CreateActivityScreens/_NewActivity";
 import _MainScreen from "./screens/MainScreens/_MainScreen";
 import _TimeScreen from "./screens/CreateActivityScreens/_TimeScreen";
+import SUSelectInterestsScreen from "./screens/AuthNRegistrationScreens/SUSelectInterestScreen";
 
 export default class App extends Component {
+  componentWillMount() {
+    const config = {
+      apiKey: "AIzaSyCksGg6SBbP1OqOdGuYLV4vRggwqw0SwGE",
+      authDomain: "smarties-1503778221826.firebaseapp.com",
+      databaseURL: "https://smarties-1503778221826.firebaseio.com",
+      projectId: "smarties-1503778221826",
+      storageBucket: "smarties-1503778221826.appspot.com",
+      messagingSenderId: "260704900664"
+    };
+
+    firebase.initializeApp(config);
+  }
+
   render() {
     const MainNavigator = StackNavigator(
       {
@@ -27,6 +42,7 @@ export default class App extends Component {
         //first: { screen: _NewActivity },
         //login: { screen: LoginScreen },
         //signUp: { screen: SUGeneralInformationScreen },
+        selectInterest: { screen: SUSelectInterestsScreen },
         main: { screen: _MainScreen }
 
       },

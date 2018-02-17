@@ -1,36 +1,25 @@
 import React, { Component } from "react";
-import { View, ScrollView, Image, Text } from "react-native";
+import { View, ScrollView, ImageBackground, Text, Image } from "react-native";
 import Icon from "react-native-elements";
 
-var categories = require("../data/general/categoryArray.json");
-var jon = require("../assets/Images/CategoriesPhotos/technology.jpeg");
+var categories = require("../data/general/categoryArray");
+
 class CategoriesBlock extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      photos: categories
+      photos: categories.categories
     };
   }
 
   renderGallery() {
-    var count = 0;
-    var previous_item = "";
-    var pairs = this.getPairsArray(this.state.photos);
-
-    return pairs.map((item, index) => {
-      var str1 = item[0].img;
-      var str2 = item[1].img;
+    return this.state.photos.map((item, index) => {
       return (
         <View style={styles.item} key={index}>
-          <Image
+          <ImageBackground
             resizeMode={Image.resizeMode.cover}
             style={styles.photo}
-            source={require("../assets/Images/CategoriesPhotos/sports.jpeg")}
-          />
-          <Image
-            resizeMode={Image.resizeMode.cover}
-            style={styles.photo}
-            source={require("../assets/Images/CategoriesPhotos/sports.jpeg")}
+            source={item.img}
           />
         </View>
       );
@@ -56,10 +45,12 @@ class CategoriesBlock extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <ScrollView style={styles.gallery}>
-          <Image style={styles.photo} source={jon} />
-        </ScrollView>
-        <Text> Hey</Text>
+        <ScrollView style={styles.gallery}>{this.renderGallery()}</ScrollView>
+        <ImageBackground
+          resizeMode={Image.resizeMode.cover}
+          style={styles.photo}
+          source={require("../assets/Images/CategoriesPhotos/animals.jpeg")}
+        />
         <View style={styles.tabs} />
       </View>
     );
@@ -91,8 +82,8 @@ const styles = {
   },
   photo: {
     flex: 1,
-    height: 100,
-    width: 50
+    height: 200,
+    width: 200
   }
 };
 

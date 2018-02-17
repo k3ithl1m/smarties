@@ -17,15 +17,8 @@ class _MainScreen extends Component {
     console.log(list);
     return (
       <View style={{ flex: 1 }}>
-        <Header
-          //leftComponent={<Icon name="menu" size={30} onPress = () => {this.props.navigation.} />}
-          centerComponent={{ text: "My Events" }}
-          backgroundColor="#FFF"
-        />
         <ScrollView>
-          <View>
-            {list.map((l, i) => <ActivityCard eventDetail={l} key={i} />)}
-          </View>
+          {list.map((l, i) => <ActivityCard eventDetail={l} key={i} />)}
         </ScrollView>
         <YMiddleSnapButton />
       </View>
