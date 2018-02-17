@@ -12,15 +12,15 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 import WelcomeScreen from "./screens/WelcomeScreen";
-// import _NewActivity from "./screens/NewActivity";
+import _NewActivity from "./screens/CreateActivityScreens/_NewActivity";
 import _MainScreen from "./screens/MainScreens/_MainScreen";
 
 export default class App extends Component {
   render() {
     const MainNavigator = StackNavigator(
       {
-        first: { screen: WelcomeScreen }
-        // first: { screen: _NewActivity }
+        // first: { screen: WelcomeScreen }
+        first: { screen: _NewActivity }
         // main: { screen: _MainScreen }
       },
       {
