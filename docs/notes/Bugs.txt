@@ -1,0 +1,4 @@
+TypeError: undefined is not an object (evaluating '_styling2
+.default.title')
+= this might be due to a cause of not having the {braces}
+in between the Component
