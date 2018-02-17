@@ -34,7 +34,7 @@ class SUGeneralInformationScreen extends Component {
             <YTextInput title="Password" />
             <YButton
               title="Next"
-              onPress={() => this.props.navigation.navigate("getPhoneNumber")}
+              onPress={() => this.props.navigation.navigate("selectInterest")}
             />
           </View>
         </View>

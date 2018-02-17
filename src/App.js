@@ -21,6 +21,7 @@ import _Where from "./screens/CreateActivityScreens/_Where";
 import _MainScreen from "./screens/MainScreens/_MainScreen";
 import _TimeScreen from "./screens/CreateActivityScreens/_TimeScreen";
 import SUSelectInterestsScreen from "./screens/AuthNRegistrationScreens/SUSelectInterestScreen";
+import InviteFriendsScreen from "./screens/CreateActivityScreens/InviteFriendsScreen";
 
 export default class App extends Component {
   componentWillMount() {
@@ -39,13 +40,14 @@ export default class App extends Component {
   render() {
     const MainNavigator = StackNavigator(
       {
-        // first: { screen: WelcomeScreen }
-        // first: { screen: _Where }
-        // first: { screen: _NewActivity }
-        //login: { screen: LoginScreen },
-        //signUp: { screen: SUGeneralInformationScreen },
-        selectInterest: { screen: SUSelectInterestsScreen },
-        main: { screen: _MainScreen }
+        first: { screen: WelcomeScreen },
+        where: { screen: _Where },
+        createActivity: { screen: _NewActivity },
+        login: { screen: LoginScreen },
+        main: { screen: _MainScreen },
+        signUp: { screen: SUGeneralInformationScreen },
+        inviteFriend: { screen: InviteFriendsScreen },
+        selectInterest: { screen: SUSelectInterestsScreen }
       },
       {
         headerMode: "none",

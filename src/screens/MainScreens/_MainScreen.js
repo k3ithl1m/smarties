@@ -20,7 +20,9 @@ class _MainScreen extends Component {
         <ScrollView>
           {list.map((l, i) => <ActivityCard eventDetail={l} key={i} />)}
         </ScrollView>
-        <YMiddleSnapButton />
+        <YMiddleSnapButton
+          onPress={() => this.props.navigation.navigate("createActivity")}
+        />
       </View>
     );
   }
