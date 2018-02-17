@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2019-12-02",
+    "dateValue": "201912021240",
+    "time": {
+      "startTime": "1230",
+      "endTime": "1530"
+    },
+    "description":
+      "This is an event all about cats and it's crazy to think about what cats are.",
+    "eventid": "-L-PEwyCOqx2EZiIYAJs",
+    "location": {
+      "addressName": "Frey Building",
+      "streetName": "One College Ave Unit 4444, Mechanicsburg, PA, USA",
+      "geometry": {
+        "lat": -33.866651,
+        "lng": 151.195827
+      }
+    },
+    "name": "Cats4Life",
+    "event_img": "/CategoriesPhotos/animals.jpeg",
+    "category": ["chill", "sports"],
+    "user": {
+      "_id": "GkRBruJwSfVKVZN68XvX9XnNz1s1",
+      "name": "Keith",
+      "profile_img": "/UserSample/keith.jpg"
+    },
+
+    "followers": ["jordan", "SammyB", "Keith"],
+    "interested": ["JZ", "KidCudi"]
+  },
+  {
+    "date": "2019-12-02",
+    "dateValue": "201912021240",
+    "time": {
+      "startTime": "1230",
+      "endTime": "1530"
+    },
+    "description":
+      "This is an event all about cats and it's crazy to think about what cats are.",
+    "eventid": "-K-PEwyXvnsdfsde12CZg",
+    "location": {
+      "addressName": "Frey Building",
+      "streetName": "One College Ave Unit 4444, Mechanicsburg, PA, USA",
+      "geometry": {
+        "lat": -33.866651,
+        "lng": 151.195827
+      }
+    },
+    "name": "Cats4Life",
+    "event_img": "/CategoriesPhotos/beach.jpeg",
+    "category": ["chill", "sports"],
+    "user": {
+      "_id": "GkRBruJwSfVKVZN68XvX9XnNz1s1",
+      "name": "Sam",
+      "profile_img": "/UserSample/sam.jpg"
+    },
+
+    "followers": ["jordan", "SammyB", "Keith"],
+    "interested": ["JZ", "KidCudi"]
+  },
+  {
+    "date": "2019-12-02",
+    "dateValue": "201912021240",
+    "time": {
+      "startTime": "1230",
+      "endTime": "1530"
+    },
+    "description":
+      "This is an event all about cats and it's crazy to think about what cats are.",
+    "eventid": "-P-PEwsdf12nsdfsde12CZg",
+    "location": {
+      "addressName": "Frey Building",
+      "streetName": "One College Ave Unit 4444, Mechanicsburg, PA, USA",
+      "geometry": {
+        "lat": -33.866651,
+        "lng": 151.195827
+      }
+    },
+    "name": "Cats4Life",
+    "event_img": "/CategoriesPhotos/beachlens.jpeg",
+    "category": ["chill", "sports"],
+    "user": {
+      "_id": "GkRBruJwSfVKVZN68XvX9XnNz1s1",
+      "name": "Yacoub",
+      "profile_img": "/UserSample/yacoub.jpg"
+    },
+
+    "followers": ["jordan", "SammyB", "Keith"],
+    "interested": ["JZ", "KidCudi"]
+  },
+  {
+    "date": "2019-12-02",
+    "dateValue": "201912021240",
+    "time": {
+      "startTime": "1230",
+      "endTime": "1530"
+    },
+    "description":
+      "This is an event all about cats and it's crazy to think about what cats are.",
+    "eventid": "-T-PEwvR2y7dfsde12CZg",
+    "location": {
+      "addressName": "Frey Building",
+      "streetName": "One College Ave Unit 4444, Mechanicsburg, PA, USA",
+      "geometry": {
+        "lat": -33.866651,
+        "lng": 151.195827
+      }
+    },
+    "name": "Cats4Life",
+    "event_img": "/CategoriesPhotos/cherry.jpg",
+    "category": ["chill", "sports"],
+    "user": {
+      "_id": "GkRBruJwSfVKVZN68XvX9XnNz1s1",
+      "name": "Jeremy",
+      "profile_img": "/UserSample/jeremy.jpg"
+    },
+
+    "followers": ["jordan", "SammyB", "Keith"],
+    "interested": ["JZ", "KidCudi"]
+  },
+  {
+    "date": "2019-12-02",
+    "dateValue": "201912021240",
+    "time": {
+      "startTime": "1230",
+      "endTime": "1530"
+    },
+    "description":
+      "This is an event all about cats and it's crazy to think about what cats are.",
+    "eventid": "-K-awR21vnsdfsde12CZg",
+    "location": {
+      "addressName": "Frey Building",
+      "streetName": "One College Ave Unit 4444, Mechanicsburg, PA, USA",
+      "geometry": {
+        "lat": -33.866651,
+        "lng": 151.195827
+      }
+    },
+    "name": "Cats4Life",
+    "event_img": "/CategoriesPhotos/chill.jpeg",
+    "category": ["chill", "sports"],
+    "user": {
+      "_id": "GkRBruJwSfVKVZN68XvX9XnNz1s1",
+      "name": "Anne",
+      "profile_img": "/UserSample/anne.jpeg"
+    },
+
+    "followers": ["jordan", "SammyB", "Keith"],
+    "interested": ["JZ", "KidCudi"]
+  },
+  {
+    "date": "2019-12-02",
+    "dateValue": "201912021240",
+    "time": {
+      "startTime": "1230",
+      "endTime": "1530"
+    },
+    "description":
+      "This is an event all about cats and it's crazy to think about what cats are.",
+    "eventid": "-N-PEwyXvasWW45tte6Zg",
+    "location": {
+      "addressName": "Frey Building",
+      "streetName": "One College Ave Unit 4444, Mechanicsburg, PA, USA",
+      "geometry": {
+        "lat": -33.866651,
+        "lng": 151.195827
+      }
+    },
+    "name": "Cats4Life",
+    "event_img": "/CategoriesPhotos/coffee.jpeg",
+    "category": ["chill", "sports"],
+    "user": {
+      "_id": "GkRBruJwSfVKVZN68XvX9XnNz1s1",
+      "name": "Liane",
+      "profile_img": "/UserSample/liane.jpeg"
+    },
+
+    "followers": ["jordan", "SammyB", "Keith"],
+    "interested": ["JZ", "KidCudi"]
+  },
+  {
+    "date": "2019-12-02",
+    "dateValue": "201912021240",
+    "time": {
+      "startTime": "1230",
+      "endTime": "1530"
+    },
+    "description":
+      "This is an event all about cats and it's crazy to think about what cats are.",
+    "eventid": "-F-PEwyXvsqbhg3321s5y67",
+    "location": {
+      "addressName": "Frey Building",
+      "streetName": "One College Ave Unit 4444, Mechanicsburg, PA, USA",
+      "geometry": {
+        "lat": -33.866651,
+        "lng": 151.195827
+      }
+    },
+    "name": "Cats4Life",
+    "event_img": "/CategoriesPhotos/firebending.jpeg",
+    "category": ["chill", "sports"],
+    "user": {
+      "_id": "GkRBruJwSfVKVZN68XvX9XnNz1s1",
+      "name": "Mary",
+      "profile_img": "/UserSample/mary.jpeg"
+    },
+
+    "followers": ["jordan", "SammyB", "Keith"],
+    "interested": ["JZ", "KidCudi"]
+  },
+  {
+    "date": "2019-12-02",
+    "dateValue": "201912021240",
+    "time": {
+      "startTime": "1230",
+      "endTime": "1530"
+    },
+    "description":
+      "This is an event all about cats and it's crazy to think about what cats are.",
+    "eventid": "-K-PEwyXksneu912k9ddg",
+    "location": {
+      "addressName": "Frey Building",
+      "streetName": "One College Ave Unit 4444, Mechanicsburg, PA, USA",
+      "geometry": {
+        "lat": -33.866651,
+        "lng": 151.195827
+      }
+    },
+    "name": "Cats4Life",
+    "event_img": "/CategoriesPhotos/fitness.jpeg",
+    "category": ["chill", "sports"],
+    "user": {
+      "_id": "GkRBruJwSfVKVZN68XvX9XnNz1s1",
+      "name": "Sam",
+      "profile_img": "/UserSample/sam.jpg"
+    },
+
+    "followers": ["jordan", "SammyB", "Keith"],
+    "interested": ["JZ", "KidCudi"]
+  },
+  {
+    "date": "2019-12-02",
+    "dateValue": "201912021240",
+    "time": {
+      "startTime": "1230",
+      "endTime": "1530"
+    },
+    "description":
+      "This is an event all about cats and it's crazy to think about what cats are.",
+    "eventid": "-K-P12Fensdfsde12CZg",
+    "location": {
+      "addressName": "Frey Building",
+      "streetName": "One College Ave Unit 4444, Mechanicsburg, PA, USA",
+      "geometry": {
+        "lat": -33.866651,
+        "lng": 151.195827
+      }
+    },
+    "name": "Cats4Life",
+    "event_img": "/CategoriesPhotos/nature.jpeg",
+    "category": ["chill", "sports"],
+    "user": {
+      "_id": "GkRBruJwSfVKVZN68XvX9XnNz1s1",
+      "name": "Babbitt",
+      "profile_img": "/UserSample/babbitt.jpeg"
+    },
+
+    "followers": ["jordan", "SammyB", "Keith"],
+    "interested": ["JZ", "KidCudi"]
+  },
+  {
+    "date": "2019-12-02",
+    "dateValue": "201912021240",
+    "time": {
+      "startTime": "1230",
+      "endTime": "1530"
+    },
+    "description":
+      "This is an event all about cats and it's crazy to think about what cats are.",
+    "eventid": "-O-PE12svnsdfsde12CZg",
+    "location": {
+      "addressName": "Frey Building",
+      "streetName": "One College Ave Unit 4444, Mechanicsburg, PA, USA",
+      "geometry": {
+        "lat": -33.866651,
+        "lng": 151.195827
+      }
+    },
+    "name": "Cats4Life",
+    "event_img": "/CategoriesPhotos/woods.jpeg",
+    "category": ["chill", "sports"],
+    "user": {
+      "_id": "GkRBruJwSfVKVZN68XvX9XnNz1s1",
+      "name": "Yacoub",
+      "profile_img": "/UserSample/yacoub.jpg"
+    },
+
+    "followers": ["jordan", "SammyB", "Keith"],
+    "interested": ["JZ", "KidCudi"]
+  },
+  {
+    "date": "2019-12-02",
+    "dateValue": "201912021240",
+    "time": {
+      "startTime": "1230",
+      "endTime": "1530"
+    },
+    "description":
+      "This is an event all about cats and it's crazy to think about what cats are.",
+    "eventid": "-T-PEwyXvnsdfsda12g",
+    "location": {
+      "addressName": "Frey Building",
+      "streetName": "One College Ave Unit 4444, Mechanicsburg, PA, USA",
+      "geometry": {
+        "lat": -33.866651,
+        "lng": 151.195827
+      }
+    },
+    "name": "Cats4Life",
+    "event_img": "/CategoriesPhotos/racecar.jpeg",
+    "category": ["chill", "sports"],
+    "user": {
+      "_id": "GkRBruJwSfVKVZN68XvX9XnNz1s1",
+      "name": "Sam",
+      "profile_img": "/UserSample/sam.jpg"
+    },
+
+    "followers": ["jordan", "SammyB", "Keith"],
+    "interested": ["JZ", "KidCudi"]
+  },
+  {
+    "date": "2019-12-02",
+    "dateValue": "201912021240",
+    "time": {
+      "startTime": "1230",
+      "endTime": "1530"
+    },
+    "description":
+      "This is an event all about cats and it's crazy to think about what cats are.",
+    "eventid": "-K-PEwyXas24gg331a1g",
+    "location": {
+      "addressName": "Frey Building",
+      "streetName": "One College Ave Unit 4444, Mechanicsburg, PA, USA",
+      "geometry": {
+        "lat": -33.866651,
+        "lng": 151.195827
+      }
+    },
+    "name": "Cats4Life",
+    "event_img": "/CategoriesPhotos/mountains.jpeg",
+    "category": ["chill", "sports"],
+    "user": {
+      "_id": "GkRBruJwSfVKVZN68XvX9XnNz1s1",
+      "name": "Anne",
+      "profile_img": "/UserSample/anne.jpeg"
+    },
+
+    "followers": ["jordan", "SammyB", "Keith"],
+    "interested": ["JZ", "KidCudi"]
+  }
+]

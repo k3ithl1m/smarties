@@ -12,16 +12,23 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 import WelcomeScreen from "./screens/WelcomeScreen";
+
+import LoginScreen from "./screens/AuthNRegistrationScreens/_LoginScreen";
+import SUGeneralInformationScreen from "./screens/AuthNRegistrationScreens/_SUGeneralInformationScreen";
 import _NewActivity from "./screens/CreateActivityScreens/_NewActivity";
 import _MainScreen from "./screens/MainScreens/_MainScreen";
+import _TimeScreen from "./screens/CreateActivityScreens/_TimeScreen";
 
 export default class App extends Component {
   render() {
     const MainNavigator = StackNavigator(
       {
-        // first: { screen: WelcomeScreen }
-        first: { screen: _NewActivity }
-        // main: { screen: _MainScreen }
+        //first: { screen: WelcomeScreen },
+        //first: { screen: _NewActivity },
+        //login: { screen: LoginScreen },
+        //signUp: { screen: SUGeneralInformationScreen },
+        main: { screen: _MainScreen }
+
       },
       {
         headerMode: "none",
@@ -33,7 +40,13 @@ export default class App extends Component {
     return (
       <Provider store={store}>
         <View style={styles.container}>
-          <MainNavigator style={{ width: Dimensions.get("window").width }} />
+          <MainNavigator
+            style={{
+              ...Platform.select({
+                android: { width: Dimensions.get("window").width }
+              })
+            }}
+          />
         </View>
       </Provider>
     );
@@ -43,6 +56,6 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F5FCFF"
+    backgroundColor: "#FFFFFF"
   }
 });
