@@ -28,7 +28,7 @@ class WelcomeScreen extends Component {
             >
               <Text
                 style={{
-                  fontSize: 76,
+                  fontSize: 64,
                   fontWeight: "800",
                   color: "white",
                   margin: 50
