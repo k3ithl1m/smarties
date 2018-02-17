@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Text, View, ImageBackground, Dimensions } from "react-native";
 import { Button } from "react-native-elements";
 
-const walkingImage = require("../../assets/Images/WelcomePage/StreetWalking2.jpg");
+const walkingImage = require("../assets/Images/WelcomePage/StreetWalking2.jpg");
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const SCREEN_HEIGHT = Dimensions.get("window").height;
 
