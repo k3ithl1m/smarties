@@ -11,10 +11,10 @@ import { Provider } from "react-redux";
 
 import store from "./store";
 
-import WelcomeScreen from "./screens/WelcomeScreen";
+// import WelcomeScreen from "./screens/WelcomeScreen";
 import LoginScreen from "./screens/AuthNRegistrationScreens/_LoginScreen";
 import SUGeneralInformationScreen from "./screens/AuthNRegistrationScreens/_SUGeneralInformationScreen";
-// import _NewActivity from "./screens/NewActivity";
+import _NewActivity from "./screens/CreateActivityScreens/_NewActivity";
 import _MainScreen from "./screens/MainScreens/_MainScreen";
 import _TimeScreen from "./screens/CreateActivityScreens/_TimeScreen";
 
@@ -22,9 +22,8 @@ export default class App extends Component {
   render() {
     const MainNavigator = StackNavigator(
       {
-       // first: { screen: WelcomeScreen },
-        // first: { screen: _NewActivity }
-        time : {screen : _TimeScreen},
+        // first: { screen: WelcomeScreen },
+        first: { screen: _NewActivity },
         login: { screen: LoginScreen },
         signUp: { screen: SUGeneralInformationScreen },
         main: { screen: _MainScreen }
