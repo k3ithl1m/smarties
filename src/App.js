@@ -12,6 +12,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 import WelcomeScreen from "./screens/WelcomeScreen";
+
 import LoginScreen from "./screens/AuthNRegistrationScreens/_LoginScreen";
 import SUGeneralInformationScreen from "./screens/AuthNRegistrationScreens/_SUGeneralInformationScreen";
 import _NewActivity from "./screens/CreateActivityScreens/_NewActivity";
@@ -27,6 +28,7 @@ export default class App extends Component {
         //login: { screen: LoginScreen },
         //signUp: { screen: SUGeneralInformationScreen },
         main: { screen: _MainScreen }
+
       },
       {
         headerMode: "none",
