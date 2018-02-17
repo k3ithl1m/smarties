@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, Dimensions } from "react-native";
+import { View, Text, Dimensions, TouchableOpacity } from "react-native";
 import { Button, Header, Icon } from "react-native-elements";
 import { ComponentStyle } from "../../styling";
 import { NavigationActions } from "react-navigation";
@@ -23,11 +23,13 @@ class LoginScreen extends Component {
         <View style={{ flex: 1 }}>
           <YHeader
             leftComponent={
-              <Icon
-                name="chevron-left"
-                size={30}
+              <TouchableOpacity
+                style={{ flexDirection: "row", alignSelf: "center" }}
                 onPress={() => this.props.navigation.dispatch(backAction)}
-              />
+              >
+                <Icon name="chevron-left" size={30} />
+                <Text>Back</Text>
+              </TouchableOpacity>
             }
           />
           <Text style={ComponentStyle.title}>Log in</Text>
