@@ -1,8 +1,18 @@
 import React, { Component } from "react";
-import { View, ScrollView, ImageBackground, Text, Image } from "react-native";
+import {
+  View,
+  ScrollView,
+  ImageBackground,
+  Text,
+  Image,
+  Dimensions
+} from "react-native";
 import Icon from "react-native-elements";
 
-const categories = require("../data/general/categoryArray");
+
+var categories = require("../data/general/categoryArray");
+const SCREEN_WIDTH = Dimensions.get("window").width;
+
 
 class CategoriesBlock extends Component {
   test(props) {
@@ -33,7 +43,33 @@ class CategoriesBlock extends Component {
   }
 
   render() {
-    return <ScrollView>{this.test(categories)}</ScrollView>;
+
+    return (
+      <View style={styles.container}>
+        <ScrollView style={styles.gallery}>
+          {this.state.photos.map((item, i) => (
+            <View key={i}>
+              <Image
+                resizeMode={Image.resizeMode.cover}
+                style={styles.photo}
+                source={item.img}
+              />
+              <Text
+                style={{
+                  fontSize: 40,
+                  color: "#bbb",
+                  fontWeight: "800",
+                  justifyContent: "center",
+                  alignSelf: "center"
+                }}
+              >
+                {item.label}
+              </Text>
+            </View>
+          ))}
+        </ScrollView>
+      </View>
+    );
   }
 }
 
@@ -60,8 +96,8 @@ const styles = {
   },
   photo: {
     flex: 1,
-    height: 200,
-    width: 200
+    height: 70,
+    width: SCREEN_WIDTH
   }
 };
 
