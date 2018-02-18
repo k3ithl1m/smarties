@@ -18,6 +18,7 @@ import LoginScreen from "./screens/AuthNRegistrationScreens/_LoginScreen";
 import SUGeneralInformationScreen from "./screens/AuthNRegistrationScreens/_SUGeneralInformationScreen";
 import _NewActivity from "./screens/CreateActivityScreens/_NewActivity";
 import _Where from "./screens/CreateActivityScreens/_Where";
+import _When from "./screens/CreateActivityScreens/_When";
 import _MainScreen from "./screens/MainScreens/_MainScreen";
 import _TimeScreen from "./screens/CreateActivityScreens/_TimeScreen";
 import SUSelectInterestsScreen from "./screens/AuthNRegistrationScreens/SUSelectInterestScreen";
@@ -40,6 +41,7 @@ export default class App extends Component {
   render() {
     const MainNavigator = StackNavigator(
       {
+
         first: { screen: WelcomeScreen },
         where: { screen: _Where },
         createActivity: { screen: _NewActivity },
@@ -48,6 +50,7 @@ export default class App extends Component {
         signUp: { screen: SUGeneralInformationScreen },
         inviteFriend: { screen: InviteFriendsScreen },
         selectInterest: { screen: SUSelectInterestsScreen }
+
       },
       {
         headerMode: "none",
