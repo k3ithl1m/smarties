@@ -6,6 +6,9 @@ import DismissKeyboardAvoidingView from "./DismissKeyboardAvoidingView";
 import CategoriesBlock from "./CategoriesBlock";
 import ActivityCard from "./Activity/ActivityCard";
 import YMiddleSnapButton from "./YMiddleSnapButton";
+import SearchBlock from "./SearchBlock";
+import AvoidStatusBar from "./AvoidStatusBar";
+import UserBlock from "./UserBlock";
 
 export {
   YTextInput,
@@ -15,5 +18,8 @@ export {
   YButton,
   CategoriesBlock,
   ActivityCard,
-  YMiddleSnapButton
+  YMiddleSnapButton,
+  SearchBlock,
+  AvoidStatusBar,
+  UserBlock
 };

@@ -4,7 +4,8 @@ import {
   Text,
   TouchableOpacity,
   Dimensions,
-  ScrollView
+  ScrollView,
+  AsyncStorage
 } from "react-native";
 import { Icon, Header, List } from "react-native-elements";
 import { YHeader, ActivityCard, YMiddleSnapButton } from "../../components";
@@ -20,7 +21,9 @@ class _MainScreen extends Component {
         <ScrollView>
           {list.map((l, i) => <ActivityCard eventDetail={l} key={i} />)}
         </ScrollView>
-        <YMiddleSnapButton />
+        <YMiddleSnapButton
+          onPress={() => this.props.navigation.navigate("createActivity")}
+        />
       </View>
     );
   }

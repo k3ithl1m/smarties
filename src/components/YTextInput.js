@@ -12,7 +12,15 @@ const SCREEN_WIDTH = Dimensions.get("window").width;
 const SCREEN_HEIGHT = Dimensions.get("window").height;
 
 const YTextInput = props => {
-  const { title, keyboardType, value, returnKeyType } = props;
+  const {
+    title,
+    keyboardType,
+    value,
+    returnKeyType,
+    secureTextEntry,
+    onChangeText,
+    autoCorrect
+  } = props;
   return (
     <View style={{ flex: 1, alignSelf: "center" }}>
       <TextInput
@@ -21,6 +29,10 @@ const YTextInput = props => {
         keyboardType={keyboardType}
         value={value}
         returnKeyType={returnKeyType}
+        secureTextEntry={secureTextEntry}
+        onChangeText={onChangeText}
+        autoCapitalize="none"
+        autoCorrect={autoCorrect}
       />
       <View
         style={{
@@ -31,6 +43,14 @@ const YTextInput = props => {
       />
     </View>
   );
+};
+
+YTextInput.defaultProps = {
+  secureTextEntry: false,
+  onChangeText: () => {},
+  value: "",
+  title: "Enter something...",
+  autoCorrect: false
 };
 
 export default YTextInput;
