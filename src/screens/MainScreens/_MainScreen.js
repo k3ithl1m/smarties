@@ -4,7 +4,8 @@ import {
   Text,
   TouchableOpacity,
   Dimensions,
-  ScrollView
+  ScrollView,
+  AsyncStorage
 } from "react-native";
 import { Icon, Header, List } from "react-native-elements";
 import { YHeader, ActivityCard, YMiddleSnapButton } from "../../components";
