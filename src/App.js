@@ -22,6 +22,7 @@ export default class App extends Component {
   render() {
     const MainNavigator = StackNavigator(
       {
+        time: { screen: _TimeScreen },
         // first: { screen: WelcomeScreen },
         first: { screen: _NewActivity },
         login: { screen: LoginScreen },
