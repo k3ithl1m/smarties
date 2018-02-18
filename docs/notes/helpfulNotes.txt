@@ -1,0 +1,9 @@
+LinearGradient: {
+    #Shaded Image#
+
+  ~ to get the the shaded style, follow the instructions
+    in this link //https://github.com/react-native-community/react-native-linear-gradient/issues/14
+  ~ Basically, we gotta set colors = {["transparent", "#000"]}
+    locations = {[0.4, 1.2]} //set the location where it turns dark
+    and get the styling from ActivityStyle.linearGradient
+}

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, Text } from "react-native";
+import { connect } from "react-redux";
 import { Icon } from "react-native-elements";
 import {
   YTextInput,
@@ -9,10 +10,36 @@ import {
 } from "../../components";
 import { ComponentStyle } from "../../styling";
 import { NavigationActions } from "react-navigation";
+import * as actions from "../../actions";
 
 const backAction = NavigationActions.back();
 
 class SUGeneralInformationScreen extends Component {
+  state = {
+    name: "",
+    email: "",
+    password: ""
+  };
+
+  onNameChanged(name) {
+    this.setState({ name });
+  }
+
+  onEmailChanged(email) {
+    this.setState({ email });
+  }
+
+  onPasswordChanged(password) {
+    this.setState({ password });
+  }
+
+  onSignUpPressed = () => {
+    const { email, password, name } = this.state;
+    this.props.signUp(name, email, password, () => {
+      this.props.navigation.navigate("main");
+    });
+  };
+
   render() {
     return (
       <DismissKeyboardAvoidingView>
@@ -28,14 +55,23 @@ class SUGeneralInformationScreen extends Component {
           />
           <Text style={ComponentStyle.title}>Create account</Text>
           <View style={{ height: 350 }}>
-            <YTextInput title="First Name" />
-            <YTextInput title="Last Name" />
-            <YTextInput title="Email" />
-            <YTextInput title="Password" />
-            <YButton
-              title="Next"
-              onPress={() => this.props.navigation.navigate("getPhoneNumber")}
+            <YTextInput
+              title="Name"
+              value={this.state.name}
+              onChangeText={this.onNameChanged.bind(this)}
             />
+            <YTextInput
+              title="Email"
+              value={this.state.email}
+              onChangeText={this.onEmailChanged.bind(this)}
+            />
+            <YTextInput
+              title="Password"
+              secureTextEntry
+              value={this.state.password}
+              onChangeText={this.onPasswordChanged.bind(this)}
+            />
+            <YButton title="Next" onPress={this.onSignUpPressed} />
           </View>
         </View>
       </DismissKeyboardAvoidingView>
@@ -43,4 +79,4 @@ class SUGeneralInformationScreen extends Component {
   }
 }
 
-export default SUGeneralInformationScreen;
+export default connect(null, actions)(SUGeneralInformationScreen);

@@ -1,12 +1,29 @@
 import React, { Component } from "react";
 import { Text, View, ImageBackground, Dimensions } from "react-native";
 import { Button } from "react-native-elements";
+import { connect } from "react-redux";
+import * as actions from "../actions";
 
 const walkingImage = require("../assets/Images/WelcomePage/StreetWalking2.jpg");
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const SCREEN_HEIGHT = Dimensions.get("window").height;
 
 class WelcomeScreen extends Component {
+  componentDidMount() {
+    this.props.loginCheck();
+    this.onAuthCheck(this.props);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.onAuthCheck(nextProps);
+  }
+
+  onAuthCheck(props) {
+    if (props.token) {
+      this.props.navigation.navigate("main");
+    }
+  }
+
   render() {
     return (
       <View style={{ flex: 1 }}>
@@ -97,4 +114,8 @@ class WelcomeScreen extends Component {
   }
 }
 
-export default WelcomeScreen;
+function mapStateToProps({ auth }) {
+  return { token: auth.token };
+}
+
+export default connect(mapStateToProps, actions)(WelcomeScreen);
