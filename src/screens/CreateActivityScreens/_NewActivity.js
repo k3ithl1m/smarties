@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { View, Text, Switch } from "react-native";
+import { View, Text } from "react-native";
+import { Switch } from "react-native-switch";
 import { Icon } from "react-native-elements";
 import { ComponentStyle } from "../../styling";
 import { NavigationActions } from "react-navigation";
@@ -8,12 +9,6 @@ import { YHeader, YSwitch, YTextInput } from "../../components";
 const backAction = NavigationActions.back();
 
 class _NewActivity extends Component {
-  state = { switchValue: false };
-
-  toggleSwitch = () => {
-    this.setState(state => ({ switchvalue: !state.switchValue }));
-  };
-
   render() {
     return (
       <View>
@@ -41,10 +36,7 @@ class _NewActivity extends Component {
         </View>
         <Text style={ComponentStyle.label}>Private?</Text>
         <View style={{ flex: 1, alignItems: "flex-start", marginLeft: 15 }}>
-          <Switch
-            onValueChange={this.toggleSwitch}
-            value={this.state.switchValue}
-          />
+          <Switch />
         </View>
       </View>
     );

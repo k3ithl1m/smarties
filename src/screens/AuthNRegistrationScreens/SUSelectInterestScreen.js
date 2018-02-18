@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ImageBackground } from "react-native";
 import { YHeader, CategoriesBlock } from "../../components";
 import { Icon } from "react-native-elements";
 import { ComponentStyle } from "../../styling";
@@ -17,5 +17,24 @@ class SUSelectInterestsScreen extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  row: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "space-between"
+  },
+  box: {
+    flex: 1,
+    height: 100,
+    backgroundColor: "#333"
+  },
+  box2: {
+    backgroundColor: "green"
+  },
+  box3: {
+    backgroundColor: "orange"
+  }
+});
 
 export default SUSelectInterestsScreen;
